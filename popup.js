@@ -1,6 +1,6 @@
 document.getElementById("add").addEventListener("click", () => {
-  const key = document.getElementById("keyword").value;
-  const res = document.getElementById("response").value;
+  const key = document.getElementById("keyword").value.trim();
+  const res = document.getElementById("response").value.trim();
   if (!key || !res) return;
 
   chrome.storage.local.get("rules", (data) => {
@@ -12,6 +12,7 @@ document.getElementById("add").addEventListener("click", () => {
   });
 });
 
+
 chrome.storage.local.get("rules", (data) => {
   const rules = data.rules || [];
   const ul = document.getElementById("rules");
@@ -21,3 +22,4 @@ chrome.storage.local.get("rules", (data) => {
     ul.appendChild(li);
   });
 });
+
