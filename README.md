@@ -97,5 +97,5 @@ Have a feature suggestion or found a bug?
 Feel free to [open an issue](https://github.com/your-username/snapreply/issues) or [submit a pull request](https://github.com/your-username/snapreply/pulls)!
 
 ---
-
+By Bhagawan Hemitha
 **Made with ❤️ to help you stay focused.**
